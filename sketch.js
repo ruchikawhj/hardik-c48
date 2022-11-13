@@ -83,6 +83,12 @@ function draw() {
     player.y = player.y + 30
 
   }
+     if (keyDown(RIGHT_ARROW)&&player.x<=width/2-player.width/2) {
+    player.x = player.x + 30
+  }
+  if (keyDown(LEFT_ARROW)&&player.x>=player.width/2) {
+    player.x = player.x - 30
+  }
 
   if (keyWentDown("space")) {
     showbullet()
